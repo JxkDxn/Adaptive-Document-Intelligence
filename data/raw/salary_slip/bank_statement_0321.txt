@@ -1,0 +1,15 @@
+Salary Slip
+
+Helios Manufacturing Pvt Ltd — SALARY SLIP
+Employee: Isha Reddy
+Employee code: EMP7119
+Pay period: May 2025
+PAN: OMCVD0371B
+Basic: INR 34,520.00
+HRA: INR 13,808.00
+Special allowance: INR 6,904.00
+PF / Tax deductions: INR 5,523.20
+Net pay: INR 49,708.80
+Credit to State Bank of India A/c 946350895666
+YTD TDS may be used for ITR working. This is a payslip, not a tax return.
+

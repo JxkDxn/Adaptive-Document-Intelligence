@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<w:document>
+<w:title>Bank Statement</w:title>
+<w:body>Kotak Mahindra Bank — Savings Account Statement
+Account holder: Arjun Khan
+Account no: 524117114329
+IFSC: ICIC0555796
+Statement period: 09-01-2024 to 23-09-2025
+Opening balance: INR 59,624.69
+01-06-2024  CR  INR 16,529.60  ATM
+03-03-2023  DR  INR 8,072.22  UPI
+26-02-2025  CR  INR 15,735.83  NEFT
+14-07-2024  DR  INR 4,554.73  UPI
+19-08-2023  CR  INR 9,080.08  UPI
+14-08-2022  DR  INR 8,417.38  POS
+23-08-2025  CR  INR 11,830.61  POS
+27-02-2024  DR  INR 21,315.10  POS
+Closing balance: INR 58,168.79
+Address on file: 95 Residency, Mumbai 404357
+This is a bank account statement, not a card statement.
+</w:body>
+</w:document>

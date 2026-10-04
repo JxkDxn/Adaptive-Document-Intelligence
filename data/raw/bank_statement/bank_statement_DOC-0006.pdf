@@ -1,0 +1,26 @@
+%PDF-1.4
+% synthetic text-bearing stand-in
+1 0 obj
+<< /Title (Bank Statement) >>
+stream
+Axis Bank — Savings Account Statement
+Account holder: Vikram Joshi
+Account no: 955172039451
+IFSC: ICIC0437793
+Statement period: 16-12-2024 to 08-06-2025
+Opening balance: INR 42,510.50
+19-01-2025  CR  INR 8,798.39  UPI
+09-05-2025  DR  INR 5,569.53  POS
+04-04-2024  CR  INR 17,908.48  IMPS
+01-12-2024  DR  INR 5,826.37  NEFT
+19-01-2023  CR  INR 12,768.90  NEFT
+03-01-2025  DR  INR 19,483.86  NEFT
+21-06-2023  CR  INR 15,963.69  ATM
+28-03-2025  DR  INR 15,961.90  IMPS
+Closing balance: INR 109,089.79
+Address on file: 213 Lake View, Pune 546667
+This is a bank account statement, not a card statement.
+
+endstream
+endobj
+%%EOF

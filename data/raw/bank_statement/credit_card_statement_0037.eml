@@ -1,0 +1,28 @@
+From: records-noreply@synthetic.example
+To: intake@lender.example
+Subject: Bank Statement
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+State Bank of India — Savings Account Statement
+Account holder: Fatima Khan
+Account no: 657393987048
+IFSC: SBIN0421511
+Statement period: 13-08-2024 to 26-01-2025
+Opening balance: INR 25,017.77
+27-02-2022  CR  INR 5,863.55  NEFT
+20-01-2022  DR  INR 5,152.72  POS
+15-09-2025  CR  INR 4,088.78  NEFT
+22-07-2025  DR  INR 12,890.54  POS
+16-11-2023  CR  INR 16,581.93  NEFT
+18-01-2024  DR  INR 15,974.99  IMPS
+09-01-2024  CR  INR 10,544.90  ATM
+05-03-2023  DR  INR 7,037.27  POS
+Closing balance: INR 80,077.68
+Address on file: 25 Lake View, Chennai 484203
+
+Credit facility reference: CARD-3653
+Available credit mentioned for overdraft: INR 52,281.11
+Minimum amount due: not applicable (savings account).
+This is a bank account statement, not a card statement.
+

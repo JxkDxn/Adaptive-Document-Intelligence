@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<w:document>
+<w:title>Bank Statement</w:title>
+<w:body>Kotak Mahindra Bank — Savings Account Statement
+Account holder: Isha Khan
+Account no: 522325052907
+IFSC: SBIN0699855
+Statement period: 28-06-2024 to 12-02-2025
+Opening balance: INR 75,378.13
+08-02-2023  CR  INR 10,826.42  POS
+26-11-2025  DR  INR 7,820.67  UPI
+10-11-2023  CR  INR 14,929.73  POS
+28-04-2025  DR  INR 11,432.19  NEFT
+23-02-2024  CR  INR 16,503.82  POS
+16-12-2025  DR  INR 22,188.66  NEFT
+05-04-2025  CR  INR 18,470.47  POS
+14-11-2024  DR  INR 16,672.68  ATM
+Closing balance: INR 106,516.44
+Address on file: 177 Industrial Area, Kolkata 451765
+
+Credit facility reference: CARD-7872
+Available credit mentioned for overdraft: INR 69,557.15
+Minimum amount due: not applicable (savings account).
+This is a bank account statement, not a card statement.
+</w:body>
+</w:document>

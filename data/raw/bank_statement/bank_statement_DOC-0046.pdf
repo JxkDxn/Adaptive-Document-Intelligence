@@ -1,0 +1,26 @@
+%PDF-1.4
+% synthetic text-bearing stand-in
+1 0 obj
+<< /Title (Bank Statement) >>
+stream
+HDFC Bank — Savings Account Statement
+Account holder: Isha Patel
+Account no: 183865859052
+IFSC: HDFC0170445
+Statement period: 19-08-2024 to 04-05-2025
+Opening balance: INR 78,769.43
+07-06-2023  CR  INR 4,236.65  IMPS
+15-05-2025  DR  INR 3,816.10  NEFT
+25-01-2025  CR  INR 1,069.11  UPI
+08-10-2022  DR  INR 9,594.91  ATM
+08-02-2025  CR  INR 17,024.62  ATM
+11-04-2025  DR  INR 20,215.42  NEFT
+18-12-2025  CR  INR 1,750.58  IMPS
+22-06-2024  DR  INR 16,180.47  ATM
+Closing balance: INR 73,742.44
+Address on file: 121 Lake View, Chennai 461701
+This is a bank account statement, not a card statement.
+
+endstream
+endobj
+%%EOF

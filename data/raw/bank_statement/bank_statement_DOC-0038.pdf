@@ -1,0 +1,26 @@
+%PDF-1.4
+% synthetic text-bearing stand-in
+1 0 obj
+<< /Title (Bank Statement) >>
+stream
+State Bank of India — Savings Account Statement
+Account holder: Arjun Patel
+Account no: 476393065973
+IFSC: UTIB0812060
+Statement period: 04-02-2024 to 08-06-2025
+Opening balance: INR 20,676.45
+01-09-2024  CR  INR 5,997.99  IMPS
+14-06-2022  DR  INR 14,285.88  POS
+07-03-2025  CR  INR 21,634.23  UPI
+13-08-2025  DR  INR 6,593.47  ATM
+26-01-2023  CR  INR 10,831.63  POS
+12-06-2023  DR  INR 21,168.32  IMPS
+27-05-2022  CR  INR 12,111.38  POS
+06-03-2022  DR  INR 10,158.80  POS
+Closing balance: INR 103,932.67
+Address on file: 17 Industrial Area, Mumbai 551975
+This is a bank account statement, not a card statement.
+
+endstream
+endobj
+%%EOF

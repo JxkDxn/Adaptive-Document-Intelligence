@@ -1,0 +1,29 @@
+%PDF-1.4
+% synthetic text-bearing stand-in
+1 0 obj
+<< /Title (Credit Card statement) >>
+stream
+HDFC Bank — Credit Card Statement
+Cardholder: Dev Joshi
+Card number: XXXX-XXXX-XXXX-3160
+Statement date: 01-04-2025
+Credit limit: INR 344,920.77
+Available credit: INR 72,857.97
+Minimum amount due: INR 3,498.43
+Total amount due: INR 19,171.85
+19-03-2025  INR 2,783.81  FUEL
+15-02-2024  INR 13,034.63  ECOM
+04-03-2024  INR 8,318.48  POS
+12-02-2022  INR 13,202.38  POS
+13-05-2022  INR 4,859.18  EMI
+15-12-2025  INR 3,647.92  ECOM
+07-05-2022  INR 15,511.55  FUEL
+02-04-2023  INR 7,119.25  FUEL
+
+Linked bank account (masked): 3740
+IFSC of auto-debit account: SBIN0221021
+Payment due date applies. This is not a savings account statement.
+
+endstream
+endobj
+%%EOF

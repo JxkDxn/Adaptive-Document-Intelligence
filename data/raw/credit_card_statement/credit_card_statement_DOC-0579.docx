@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<w:document>
+<w:title>Credit Card statement</w:title>
+<w:body>ICICI Bank — Credit Card Statement
+Cardholder: Isha Iyer
+Card number: XXXX-XXXX-XXXX-7971
+Statement date: 14-06-2025
+Credit limit: INR 223,262.93
+Available credit: INR 34,747.79
+Minimum amount due: INR 7,510.45
+Total amount due: INR 37,512.16
+07-08-2025  INR 11,373.76  ECOM
+06-06-2023  INR 13,636.78  FUEL
+04-10-2024  INR 11,812.35  ECOM
+16-05-2022  INR 1,754.11  POS
+28-05-2025  INR 9,840.51  FUEL
+13-11-2024  INR 17,500.89  ECOM
+05-11-2023  INR 4,148.20  EMI
+04-08-2022  INR 5,656.97  FUEL
+
+Linked bank account (masked): 9485
+IFSC of auto-debit account: HDFC0775593
+Payment due date applies. This is not a savings account statement.
+</w:body>
+</w:document>

@@ -1,0 +1,26 @@
+%PDF-1.4
+% synthetic text-bearing stand-in
+1 0 obj
+<< /Title (Bank Statement) >>
+stream
+ICICI Bank — Savings Account Statement
+Account holder: Arjun Khan
+Account no: 222199777527
+IFSC: HDFC0411275
+Statement period: 27-05-2024 to 16-01-2025
+Opening balance: INR 26,016.82
+03-05-2024  CR  INR 4,631.72  ATM
+15-12-2024  DR  INR 4,568.02  POS
+27-09-2024  CR  INR 18,333.10  NEFT
+10-05-2024  DR  INR 19,245.19  NEFT
+18-08-2025  CR  INR 1,658.02  NEFT
+08-04-2023  DR  INR 5,344.48  UPI
+23-01-2023  CR  INR 6,497.95  NEFT
+20-09-2022  DR  INR 16,531.13  UPI
+Closing balance: INR 24,547.97
+Address on file: 121 Residency, Ahmedabad 530107
+This is a bank account statement, not a card statement.
+
+endstream
+endobj
+%%EOF

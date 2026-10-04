@@ -1,0 +1,22 @@
+Bank Statement
+
+HDFC Bank — Savings Account Statemen7
+Account holder: Arjun Khan
+Account no: 352150020782
+IFSC: SBIN0456988
+S7atement period: 10-04-2024 to 28-02-2025
+Opening balance: INR 13,954.84
+10-02-2024  CR  INR 9,229.13  UPI
+05-09-2022  DR  INR 23,817.04  ATM
+09-02-2022  CR  INR 13,992.13  NEFT
+10-12-2024  DR  INR 6,482.08  ATM
+26-11-2022  CR  INR 16,676.76  UPI
+06-08-2024   DR  INR 1,152.35  ATM
+23-12-2023  CR  INR 6,501.23  ATM
+23-08-2024  DR  INR 18,299.58  ATM
+Closing balance: INR 51,251.05
+Address on file: 234 Residency, Bengaluru 511990
+This is  a bank account statement, not a card statemen7.
+
+[rescanned copy; low-resolution archive]
+
