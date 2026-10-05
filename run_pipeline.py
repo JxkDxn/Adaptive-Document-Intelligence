@@ -2,6 +2,7 @@ from pathlib import Path
 import hashlib
 import json
 import time
+import numpy as np
 
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -180,7 +181,7 @@ local_model.fit(train["text"], train["class_label"])
 
 
 # ------------------------------------------------------------
-# Calibrate confidence from validation score distribution
+# Tune confidence threshold on validation data
 # ------------------------------------------------------------
 
 validation_scores = local_model.decision_function(validation["text"])
@@ -190,7 +191,7 @@ if validation_scores.ndim == 1:
 
 validation_pred = local_model.predict(validation["text"])
 
-# Normalize decision scores into a comparable confidence-like value.
+
 def confidence_and_margin(scores):
     ordered = sorted(scores, reverse=True)
 
@@ -200,13 +201,62 @@ def confidence_and_margin(scores):
     top = ordered[0]
     second = ordered[1]
 
-    # sigmoid-like transformation for a bounded confidence score
-    import math
-
-    confidence = 1.0 / (1.0 + math.exp(-top))
+    # Bounded confidence-like transformation of the LinearSVC score.
+    # This is not a calibrated probability.
+    confidence = 1.0 / (1.0 + np.exp(-top))
     margin = top - second
 
     return confidence, margin
+
+
+validation_confidences = []
+validation_margins = []
+
+for scores in validation_scores:
+    confidence, margin = confidence_and_margin(scores)
+    validation_confidences.append(confidence)
+    validation_margins.append(margin)
+
+validation_confidences = np.array(validation_confidences)
+validation_margins = np.array(validation_margins)
+
+validation_correct = (
+    validation_pred == validation["class_label"].to_numpy()
+)
+
+# Choose the threshold that gives the highest validation coverage
+# while maintaining at least 99% precision among auto-routed docs.
+candidate_thresholds = np.arange(0.50, 0.96, 0.01)
+
+best_threshold = 0.70
+best_coverage = 0.0
+
+for threshold in candidate_thresholds:
+    accepted = (
+        (validation_confidences >= threshold)
+        & (validation_margins >= LOCAL_MARGIN_THRESHOLD)
+    )
+
+    if accepted.sum() == 0:
+        continue
+
+    precision = validation_correct[accepted].mean()
+    coverage = accepted.mean()
+
+    if precision >= 0.99 and coverage > best_coverage:
+        best_threshold = float(threshold)
+        best_coverage = float(coverage)
+
+LOCAL_CONFIDENCE_THRESHOLD = best_threshold
+
+print(
+    f"Validation-tuned confidence threshold: "
+    f"{LOCAL_CONFIDENCE_THRESHOLD:.2f}"
+)
+print(
+    f"Validation auto-route coverage: "
+    f"{best_coverage:.2%}"
+)
 
 
 # ------------------------------------------------------------
@@ -309,14 +359,18 @@ for idx, row in test.iterrows():
 results = pd.DataFrame(predictions)
 
 # For the assignment's all-document metric, unresolved human review
-# is counted as a miss.
+# is counted as a miss. Macro-F1 is calculated over the 15 assignment
+# classes only; human review is not treated as an additional class.
 evaluation_predictions = results["predicted_label"].fillna(
     "__HUMAN_REVIEW__"
 )
 
+assignment_labels = sorted(local_model.classes_)
+
 macro_f1 = f1_score(
     results["true_label"],
     evaluation_predictions,
+    labels=assignment_labels,
     average="macro",
     zero_division=0,
 )
