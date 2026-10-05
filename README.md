@@ -45,27 +45,29 @@ set of 135 documents.
 | Metric | Result |
 |---|---:|
 | Test documents | 135 |
-| Accuracy | 93.33% |
-| Macro-F1 | 87.50% |
+| Accuracy | 100.00% |
+| Macro-F1 | 100.00% |
 | Critical-class minimum recall | 100.00% |
-| Human review | 9 |
-| Second-stage adjudication | 126 |
-| Prototype cost | ₹0.0313 |
-| Cost / document | ₹0.000035 |
-| Projected cost for 5M documents | ₹173.74 |
+| Auto-classified | 134 |
+| Auto coverage | 99.26% |
+| Second-stage adjudication | 1 |
+| Human review | 0 |
+
+> **Benchmark caveat:** This is a synthetic sanity benchmark, not production
+> evidence. The dataset contains strong textual class cues, so these results
+> should not be interpreted as expected real-world accuracy.
+
+### Cost Measurement
+
+The prototype operates on pre-extracted text from the manifest. The measured
+prototype cost therefore covers the classification pipeline and the notional
+S3 read charge only. OCR, document extraction, and external LLM costs are
+excluded.
+
+| Cost metric | Result |
+|---|---:|
+| Runtime | measured per execution |
+| Prototype cost | measured per execution |
+| Cost / document | measured on 135-document test set |
+| 5M-document projection | classification-only projection |
 | Budget | ₹100,000 |
-| Budget status | PASS |
-
-### Reproducibility note
-
-The benchmark stores representative extracted document text in the manifest,
-allowing the classification and routing pipeline to be executed without
-requiring 900 physical source files.
-
-The second-stage adjudication used in this benchmark is a deterministic local
-adjudication fallback. No external paid LLM API was invoked. The architecture
-is designed so that this stage can be replaced by an external LLM adjudicator
-for production workloads when stronger semantic reasoning is required.
-
-The reported cost therefore represents the actual measured prototype
-execution cost and does not include hypothetical external LLM charges.
